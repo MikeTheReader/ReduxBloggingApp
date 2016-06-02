@@ -1,14 +1,14 @@
 import FETCH_POSTS from '../actions/index';
 
-const INITAL_STATE = {
+const INITIAL_STATE = {
     all: [],
     post: null
 };
 
-export default function(state=INTIAL_STATE, action) {
+export default function(state=INITIAL_STATE, action) {
     switch(action.type) {
         case (FETCH_POSTS):
-            return action.payload;
+            return {...state, all: action.payload.data};
         default:
             return state;
     }
