@@ -17,7 +17,6 @@ class PostsIndex extends Component {
                     </Link>
                 </div>
                 List of blog posts
-
             </div>
         )
     }
